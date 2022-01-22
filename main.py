@@ -54,7 +54,7 @@ async def start(message: Message, state: FSMContext):
     data = await state.get_data()
     for i in operations:
         if message.text == i:
-            await message.answer(f"ебанешься  это  -  {eval(data['firstNum']+ i +data['secNum'])}")
+            await message.answer(f"саня  это  -  {eval(data['firstNum']+ i +data['secNum'])}")
 
     await state.finish()
 
